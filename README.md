@@ -2,25 +2,6 @@
 >
 
 
-## Dev
-
-```
-$ npm install
-$ npm install -g bower
-```
-
-### Run
-
-```
-$ npm start
-```
-
-### Build
-
-```
-$ npm run build
-```
-
 ### Project's folders
 
 - `app` - code of your application goes here.
@@ -37,6 +18,7 @@ $ npm run build
 
 ```
 npm install
+npm install -g bower
 ```
 It will also download Electron runtime, and install dependencies for second `package.json` file inside `app` folder.
 
