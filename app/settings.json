@@ -1,0 +1,6 @@
+{
+  "username": "user",
+  "host": "127.0.0.1",
+  "port": 22,
+  "forward": "8080:localhost:80"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "ssh-electron",
+  "productName": "ssh-electron",
+  "version": "0.0.1",
+  "description": "Electron SSH Client",
+  "license": "Unlicense",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mixmatch/ssh-electron"
+  },
+  "bugs": {
+    "url": "https://github.com/mixmatch/ssh-electron/issues"
+  },
+  "author": {
+    "name": "Daniel Petty",
+    "email": "mixmatch@gmail.com",
+    "url": "https://danielpetty.com"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "fs-jetpack": "^0.7.0",
+    "body-parser": "*",
+    "compression": "*",
+    "connect-busboy": "*",
+    "express": "*",
+    "http-proxy": "*",
+    "sequest": "*",
+    "socket.io": "*"
+  }
+}

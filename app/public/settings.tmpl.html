@@ -1,0 +1,46 @@
+<md-dialog aria-label="Settings"  ng-cloak flex="50">
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Settings</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <ng-md-icon icon="exit_to_app" style="fill: white" size="24">
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div class="md-dialog-content" layout="column" flex="100">
+        <md-input-container  flex-gt-xs>
+          <label>Username</label>
+          <input type="text" class="settings" name="username" ng-model="settings.username"/>
+        </md-input-container>
+        <md-input-container  flex-gt-xs>
+          <label>Host</label>
+          <input type="text" class="settings" name="host" ng-model="settings.host"/>
+        </md-input-container>
+        <md-input-container  flex-gt-xs>
+          <label>Port</label>
+          <input type="text" class="settings" name="port" ng-model="settings.port"/>
+        </md-input-container>
+        <md-input-container  flex-gt-xs>
+          <label>Private Key</label>
+          <input type="text" class="settings" name="privateKey" ng-model="settings.privateKey"/>
+        </md-input-container>
+        <md-input-container  flex-gt-xs>
+          <label>Forward</label>
+          <input type="text" class="settings" name="forward" ng-model="settings.forward"/>
+        </md-input-container>
+      </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+      <span flex></span>
+      <md-button class="md-raised md-primary" ng-click="close('save')">
+       <ng-md-icon icon="save" style="fill: white" size="24"></ng-md-icon> Save
+      </md-button>
+      <md-button class="md-raised md-warn" ng-click="close('cancel')" style="margin-right:20px;">
+        <ng-md-icon icon="cancel" style="fill: white" size="24"></ng-md-icon> Cancel
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>

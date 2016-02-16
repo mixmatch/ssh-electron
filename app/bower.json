@@ -1,0 +1,33 @@
+{
+  "name": "ssh-electron",
+  "main": "index.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mixmatch/ssh-electron",
+  "authors": [
+    "Dan Petty <mixmatch@gmail.com>"
+  ],
+  "description": "ssh-electron",
+  "license": "Unlicense",
+  "ignore": [
+    "**/.*",
+    "**/*.log",
+    "node_modules",
+    "bower_components",
+    "dist",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "angular": "angular#1.5.0",
+    "angular-bootstrap": "*",
+    "bootstrap-css-only": "*",
+    "angular-material": "*",
+    "angular-material-icons": "*"
+  },
+  "resolutions": {
+    "angular": "1.5.0",
+    "angular-animate": "^1.4.8",
+    "angular-aria": "^1.4.8"
+  }
+}

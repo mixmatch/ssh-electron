@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html ng-app="sshTerminal">
+  <head>
+    <meta charset="utf-8">
+    <title>SSH Console</title>
+    <link rel="stylesheet" href="/bootstrap-css-only/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="/main.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/angular/angular.min.js"></script>
+    <script src="/angular-animate/angular-animate.min.js"></script>
+    <script src="/angular-aria/angular-aria.min.js"></script>
+    <script src="/angular-messages/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="/angular-material/angular-material.min.js"></script>
+    <script src="/angular-material-icons/angular-material-icons.min.js"></script>
+    <script src="js/controllers.js"></script>
+  </head>
+  <body ng-controller="TerminalController" bgcolor="#000">
+    <div class="term" name="output" schroll-bottom="output">
+      <span class="line" ng-repeat="line in output track by $index">{{line}}<br></span>
+    </div>
+    <form ng-submit="sendCommand()">
+      {{settings.username}}@{{settings.host}}# <input type="text" name="command" ng-model="command" value="">
+      <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
+    </form>
+    <div class="md-padding" id="popupContainer">
+      <div class="dialog-demo-content" layout="row" layout-wrap layout-margin>
+        <md-button class="md-primary md-raised" ng-click="showAdvanced($event)" flex="100" flex-gt-md="auto">
+          <ng-md-icon icon="settings" style="fill: white" size="24"></ng-md-icon> Settings
+        </md-button>
+      </div>
+    </div>
+  </body>
+</html>
